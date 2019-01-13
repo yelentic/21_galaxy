@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './CustomNavbar.css'
+import './Header.css'; 
 import ReactFlagsSelect from 'react-flags-select';
 import 'react-flags-select/css/react-flags-select.css';
 import SearchField from "react-search-field";
 
-export default class CustomNavbar extends Component {
+export default class Header extends Component {
   render() {
     return (
       <Navbar default collapseOnSelect>
@@ -26,7 +26,7 @@ export default class CustomNavbar extends Component {
                 <MenuItem eventKey={3.2}>Entrepreneur</MenuItem>
                 <MenuItem eventKey={3.3}>Particulier</MenuItem>
               </NavDropdown>
-            
+
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               Nos offres
             </NavItem>
@@ -36,7 +36,7 @@ export default class CustomNavbar extends Component {
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               Localisation
               <ReactFlagsSelect
-                defaultCountry="FR" 
+                defaultCountry="FR"
                 searchable={true}
                 searchPlaceholder="Choisissez votre localisation"
                 countries={["US", "GB", "FR", "ML", "CN", "IN"]}

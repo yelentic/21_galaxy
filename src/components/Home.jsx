@@ -5,11 +5,34 @@ import './Home.css';
 import Options from './options/Options';
 
 export default class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      shown: true
+    };
+  }
+
+  toggle() {
+    this.setState({
+      shown: !this.state.shown
+    });
+  }
+
   render() {
+    var shown = {
+      display: this.state.shown ? "block" : "none"
+    };
+
+    var hidden = {
+      display: this.state.shown ? "none" : "block"
+    }
+
     return (
       <div>
-        <Options />
-
+          <div class="overlay image">
+            <Image src="assets/dog-people.jpg" className="header-image" style={{ marginBottom : 0}}/>
+          </div>
+          <div class="overlay separator">&nbsp;</div>
         <Grid>
           <Jumbotron>
             <h2>Bienvenue sur 21 Galaxy !</h2>
@@ -18,48 +41,12 @@ export default class Home extends Component {
               activités.
             </p>
             <Link to="/">
-              <Button bsStyle="primary">En apprendre plus</Button>
+              <Button bsStyle="primary" onClick={this.toggle.bind(this)}>En apprendre plus</Button>
             </Link>
+            <p style={ hidden } id="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus lobortis massa ornare convallis. Sed volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo sollicitudin, mauris ipsum malesuada purus, id tincidunt velit lectus nec purus. Nullam consequat vehicula odio cursus molestie.</p>
           </Jumbotron>
-          <Row className="show-grid text-center">
-            <Col xs={12} sm={4} className="person-wrapper">
-              <Image src="assets/afrique.jpg" circle className="profile-pic" />
-              <h3>Afrique</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque quis tellus lobortis massa ornare convallis. Sed
-                volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo
-                sollicitudin, mauris ipsum malesuada purus, id tincidunt velit
-                lectus nec purus. Nullam consequat vehicula odio cursus
-                molestie.{' '}
-              </p>
-            </Col>
-            <Col xs={12} sm={4} className="person-wrapper">
-              <Image src="assets/europe.png" circle className="profile-pic" />
-              <h3>Europe</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque quis tellus lobortis massa ornare convallis. Sed
-                volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo
-                sollicitudin, mauris ipsum malesuada purus, id tincidunt velit
-                lectus nec purus. Nullam consequat vehicula odio cursus
-                molestie.
-              </p>
-            </Col>
-            <Col xs={12} sm={4} className="person-wrapper">
-              <Image src="assets/asie.png" circle className="profile-pic" />
-              <h3>Asie</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque quis tellus lobortis massa ornare convallis. Sed
-                volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo
-                sollicitudin, mauris ipsum malesuada purus, id tincidunt velit
-                lectus nec purus. Nullam consequat vehicula odio cursus
-                molestie.
-              </p>
-            </Col>
-          </Row>
         </Grid>
+        <Options/>
       </div>
     );
   }

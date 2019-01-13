@@ -6,7 +6,7 @@ nav.navbar, .navbar-default {
   background-image: none;
   border: none;
   border-radius: 0;
-  padding: 10px;
+  padding: 8px;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -43,7 +43,7 @@ nav.navbar, .navbar-default {
 .jumbotron {
   background-color: white;
   text-align: center;
-  text-decoration-color: black; 
+  text-decoration-color: black;
 }
 
 p {

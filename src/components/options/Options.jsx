@@ -21,7 +21,7 @@ class Options extends Component {
   };
   render() {
     return (
-      <div style={{ backgroundImage: `url(${'assets/dog-people.jpg'})` }}>
+      <div >
         <TextField
           id="researchOption"
           type="text"
