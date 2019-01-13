@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Media } from 'react-md';
 
-const Option = props => {
+const OptionCard = props => {
   return (
     <div>
       {props.course ? (
@@ -37,4 +37,4 @@ const Option = props => {
     </div>
   );
 };
-export default Option;
+export default OptionCard;

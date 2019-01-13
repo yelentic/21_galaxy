@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
-import Option from './option/Option';
-import './Options.css';
+import OptionCard from './optionGrid/OptionCard';
+import './OptionsGrid.css';
 
-class Options extends Component {
+class OptionsGrid extends Component {
   state = {
     courses: [],
     searchString: ''
@@ -21,7 +21,7 @@ class Options extends Component {
   };
   render() {
     return (
-      <div >
+      <div>
         <TextField
           id="researchOption"
           type="text"
@@ -38,7 +38,7 @@ class Options extends Component {
                 )
                 .map(currentCourse => (
                   <Grid item item xs={3} style={{ padding: 24 }}>
-                    <Option course={currentCourse} />
+                    <OptionCard course={currentCourse} />
                   </Grid>
                 ))}
             </Grid>
@@ -102,4 +102,4 @@ const MENUOPTIONS = [
   }
 ];
 
-export default Options;
+export default OptionsGrid;
