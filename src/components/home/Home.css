@@ -72,16 +72,16 @@ h3 {
 }
 
 .separator {position: relative;
-  background: rgba(250, 64, 11, 0) linear-gradient(60deg, rgba(15, 120, 247, 0.91), rgba(7, 0, 54, 0.95)) repeat scroll 0% 0%;
+  background:#2892D7;
   padding: 80px;
-  transform: skewY(174deg);
-    margin-bottom: 100px;
+  transform: skewY(180deg);
+  margin-bottom: 100px;
 
 }
 .separator2 {position: relative;
-    background: rgba(250, 64, 11, 0) linear-gradient(60deg, rgba(7, 0, 54, 0.91), rgba(15, 120, 247, 0.95)) repeat scroll 0% 0%;
+    background: #2892D7;
     padding: 80px;
-    transform: skewY(184deg);
+    transform: skewY(180deg);
     margin-bottom: 100px;
 
 }
@@ -97,3 +97,9 @@ h3 {
      margin-bottom: 50px;
 
  }
+
+ .header-image {
+  width: 100%;
+  margin-top: -2em;
+  margin-bottom: 2em;
+}

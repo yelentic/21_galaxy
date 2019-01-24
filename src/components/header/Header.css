@@ -31,7 +31,7 @@ nav.navbar, .navbar-default {
 }
 
 .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-  color: black;
+  color: white;
   background-color: transparent;
 }
 

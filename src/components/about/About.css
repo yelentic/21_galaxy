@@ -1,10 +1,47 @@
-.header-image {
-  width: 100%;
+.about-cover {
+  background: none repeat scroll 0 0 #003768;
+  clear: both;
+  min-height: 170px;
+  padding: 25px 0;
+  position: relative;
   margin-top: -2em;
   margin-bottom: 2em;
 }
 
-.about-profile-pic {
-  float: left;
-  margin: 0 1em 1em 0;
+.global {
+  margin-top: -2em;
+  margin-bottom: 2em;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.h1-title-content {
+  color: white;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.h2-subtitle {
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 26px;
 }

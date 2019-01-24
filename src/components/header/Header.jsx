@@ -17,7 +17,7 @@ export default class Header extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} componentClass={Link} href="/" to="/">
+            <NavItem eventKey={1} componentClass={Link} href="/about" to="/about">
               Découvrir 21Galaxy
             </NavItem>
               <NavDropdown eventKey={3} title="Vous êtes" id="vous-etes-id">
@@ -32,13 +32,11 @@ export default class Header extends Component {
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               Insight
             </NavItem>
-             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
+             <NavItem eventKey={1} componentClass={Link} href="" to="">
 
               <ReactFlagsSelect
                 defaultCountry="FR"
                 countries={[ "GB", "FR", "ML", "CI","SN", "CN", "IN" ]}
-
-
               />
             </NavItem>
 

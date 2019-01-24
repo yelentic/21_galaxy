@@ -60,7 +60,7 @@ const MENUOPTIONS = [
   {
     fields: {
       title: 'Créer/Gerer Ma societé',
-      image: 'assets/logo_option.jpeg'
+      image: 'assets/time3.jpg'
 
     }
   },
