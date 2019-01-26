@@ -1,5 +1,6 @@
 .about-cover {
-  background: none repeat scroll 0 0 #003768;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(60deg, rgb(20, 26, 54), rgb(4, 20, 64)) repeat scroll 0% 0%;
   clear: both;
   min-height: 170px;
   padding: 25px 0;
@@ -44,4 +45,41 @@
   font-size: 18px;
   text-transform: uppercase;
   line-height: 26px;
+}
+
+.carte {
+  position: relative;
+  float: left;
+  max-width: 30%;
+}
+
+.col-md-10 {
+  color: #0c0c1d;
+  text-align: justify;
+  position: relative;
+}
+.slogan {
+  margin-top: -1em;
+  margin-left: 5em;
+  float: left;
+  font-style: italic;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 980px;
+  text-align: justify;
+  padding: 40px;
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
 }

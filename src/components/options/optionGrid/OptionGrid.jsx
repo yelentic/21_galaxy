@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
-import OptionCard from './optionGrid/OptionCard';
-import './OptionsGrid.css';
+import OptionCard from '../optionCard/OptionCard';
+import './OptionGrid.css';
 
-class OptionsGrid extends Component {
+class OptionGrid extends Component {
   state = {
     courses: [],
     searchString: ''
@@ -31,8 +31,8 @@ class OptionsGrid extends Component {
             style={{ paddingLeft: 10 }}
             onChange={this.handleChange}
           />
-          <hr/>
-          </div>
+          <hr />
+        </div>
 
         {this.state.courses ? (
           <div>
@@ -42,7 +42,7 @@ class OptionsGrid extends Component {
                   s.fields.title.toLowerCase().includes(this.state.searchString)
                 )
                 .map(currentCourse => (
-                  <Grid item  xs={4} style={{ padding: 20 }}>
+                  <Grid item xs={4} style={{ padding: 20 }}>
                     <OptionCard course={currentCourse} />
                   </Grid>
                 ))}
@@ -60,52 +60,51 @@ const MENUOPTIONS = [
   {
     fields: {
       title: 'Créer/Gerer Ma societé',
-      image: 'assets/time3.jpg'
-
+      image: 'assets/test/1.jpg'
     }
   },
   {
     fields: {
       title: 'Marketing et Communication',
-      image: 'assets/logo_option.jpeg'
+      image: 'assets/test/2.jpg'
     }
   },
   {
     fields: {
       title: 'Investir',
-      image: 'assets/logo_option.jpeg'
+      image: 'assets/test/3.jpg'
     }
   },
   {
     fields: {
       title: 'Audit / Finances',
-      image: 'assets/background.png'
+      image: 'assets/test/4.jpg'
     }
   },
   {
     fields: {
       title: 'Affaires Publics',
-      image: 'assets/logo_option.jpeg'
+      image: 'assets/test/5.jpg'
     }
   },
   {
     fields: {
       title: 'RH et Formation',
-      image: 'assets/logo_option.jpeg'
+      image: 'assets/test/6.jpg'
     }
   },
   {
     fields: {
       title: 'Social',
-      image: 'assets/logo_option.jpeg'
+      image: 'assets/test/7.jpg'
     }
   },
   {
     fields: {
       title: 'Santé',
-      image: 'assets/logo_option.jpeg'
+      image: 'assets/test/8.jpg'
     }
   }
 ];
 
-export default OptionsGrid;
+export default OptionGrid;
