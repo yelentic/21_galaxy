@@ -6,14 +6,15 @@ import About from './components/about/About';
 //import News from './components/News';
 import Navbar from './components/header/Header';
 import Footer from './components/footer/Footer';
-
+import Nav from './nav';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Navbar/>
+          <Navbar />
+          <Nav />
           <Route exact path="/" component={Home} />
           <Route exact path="/" component={Footer} />
           <Route path="/about" component={About} />
