@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Image, Button } from 'react-bootstrap';
+import { withNamespaces } from 'react-i18next';
 import './Home.css';
 
 import OptionsGrid from '../options/OptionsGrid.jsx';
-import AppBar from "@material-ui/core/es/AppBar/AppBar";
+import AppBar from '@material-ui/core/es/AppBar/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
@@ -17,8 +18,7 @@ function TabContainer(props) {
   );
 }
 
-
-export default class Home extends Component {
+class Home extends Component {
   constructor() {
     super();
     this.state = {
@@ -33,6 +33,12 @@ export default class Home extends Component {
   }
 
   render() {
+    const { t, i18n } = this.props;
+
+    const changeLanguage = lng => {
+      i18n.changeLanguage(lng);
+    };
+
     var shown = {
       display: this.state.shown ? 'block' : 'none'
     };
@@ -43,69 +49,64 @@ export default class Home extends Component {
 
     return (
       <div>
-        <div class="overlay image">
+        <div className="overlay image">
           <Image
             src="assets/back.png"
             className="header-image"
-            style={{ marginBottom: 0}}
+            style={{ marginBottom: 0 }}
           />
         </div>
 
-          <Jumbotron>
-            <Image src="assets/21G Lg3.png" circle className="profile-pic" />
+        <Jumbotron>
+          <Image src="assets/21G Lg3.png" circle className="profile-pic" />
+          <p>{t('devise')}</p>
+          <Link to="/">
+            <Button bsStyle="primary" onClick={this.toggle.bind(this)}>
+              {t('header.discover21Galaxy')}
+            </Button>
+          </Link>
 
-
-
-
-            <p>
-              Un cabinet en ligne qui vous accompagne dans toutes vos
-              activités.
-            </p>
-            <Link to="/">
-              <Button bsStyle="primary" onClick={this.toggle.bind(this)}>
-                Découvrir 21 GALAXY
-              </Button>
-            </Link>
-
-
-            <p style={hidden} id="about">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque quis tellus lobortis massa ornare convallis. Sed
-              volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo
-              sollicitudin, mauris ipsum malesuada purus, id tincidunt velit
-              lectus nec purus. Nullam consequat vehicula odio cursus molestie.
-            </p>
-          </Jumbotron>
-          <div className="overlay separator">&nbsp;  <h1 style={{color:'white', textAlign:"center"}}> Un cabinet...fdfdvdfvdfvdfvdfv </h1> </div>
-
-        <div className={"nosoffres"}>
-          <Grid>
-
-          </Grid>
-          <OptionsGrid />
-  <hr/>
+          <p style={hidden} id="about">
+            {t('about')}
+          </p>
+        </Jumbotron>
+        <div className="overlay separator">
+          &nbsp;{' '}
+          <h1 style={{ color: 'white', textAlign: 'center' }}>
+            {' '}
+            Un cabinet...fdfdvdfvdfvdfvdfv{' '}
+          </h1>{' '}
         </div>
 
-        <div className="overlay separator2">&nbsp;  <h1 style={{color:'white', textAlign:"center"}}> Un cabinet...fdfdvdfvdfvdfvdfv </h1> </div>
+        <div className={'nosoffres'}>
+          <Grid />
+          <OptionsGrid />
+          <hr />
+        </div>
 
-        <div  className={"nosoffres"}>
-          <hr/> <br/>
-          <h1 > Notre fonctionnement  </h1>
-          <Image src="assets/Process.jpg" circle className="profile-pic" />
--          <AppBar position="static">
-            <Tabs style={{textAlign:"center"}}>
+        <div className="overlay separator2">
+          &nbsp;{' '}
+          <h1 style={{ color: 'white', textAlign: 'center' }}>
+            {' '}
+            Un cabinet...fdfdvdfvdfvdfvdfv{' '}
+          </h1>{' '}
+        </div>
+
+        <div className={'nosoffres'}>
+          <hr /> <br />
+          <h1> Notre fonctionnement </h1>
+          <Image src="assets/Process.jpg" circle className="profile-pic" />-{' '}
+          <AppBar position="static">
+            <Tabs style={{ textAlign: 'center' }}>
               <Tab value="one" label="Prise de contact" />
               <Tab value="two" label="Proposition d'intervention" />
               <Tab value="three" label="Suivi de la mission " />
               <Tab value="Four" label="Livraison " />
             </Tabs>
           </AppBar>
-
-
-
         </div>
-
       </div>
     );
   }
 }
+export default withNamespaces('translation')(Home);

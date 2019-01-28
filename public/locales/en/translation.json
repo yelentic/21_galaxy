@@ -3,5 +3,17 @@
   "description": {
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
     "part2": "Switch language between english and german using buttons above."
-  }
+  },
+  "header": {
+    "discover21Galaxy": "Discover 21Galaxy",
+    "company": "Company",
+    "contractor": "Contractor",
+    "private": "Private",
+    "position": "You are",
+    "ourOffers": "Our Offers"
+  },
+  "devise": "\nAn online firm that accompanies you in all your activities.",
+  "about": " EN => Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus lobortis massa ornare convallis. Sed volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo sollicitudin, mauris ipsum malesuada purus, id tincidunt velit  lectus nec purus. Nullam consequat vehicula odio cursus molestie."
+
+
 }

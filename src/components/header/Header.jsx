@@ -1,12 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Header.css'; 
+import './Header.css';
 import ReactFlagsSelect from 'react-flags-select';
 import 'react-flags-select/css/react-flags-select.css';
+import { withNamespaces } from 'react-i18next';
 
-export default class Header extends Component {
+class Header extends Component {
   render() {
+    const { t, i18n } = this.props;
+
+    const changeLanguage = lng => {
+      i18n.changeLanguage(lng);
+    };
     return (
       <Navbar default collapseOnSelect>
         <Navbar.Header>
@@ -18,33 +24,46 @@ export default class Header extends Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-              Découvrir 21Galaxy
+              {t('header.discover21Galaxy')}
             </NavItem>
-              <NavDropdown eventKey={3} title="Vous êtes" id="vous-etes-id">
-                <MenuItem eventKey={3.1}>Entreprise</MenuItem>
-                <MenuItem eventKey={3.2}>Entrepreneur</MenuItem>
-                <MenuItem eventKey={3.3}>Particulier</MenuItem>
-              </NavDropdown>
+            <NavDropdown
+              eventKey={3}
+              title={t('header.position')}
+              id="vous-etes-id"
+            >
+              <MenuItem eventKey={3.1}>{t('header.company')}</MenuItem>
+              <MenuItem eventKey={3.2}>{t('header.contractor')}</MenuItem>
+              <MenuItem eventKey={3.3}>{t('header.private')}</MenuItem>
+            </NavDropdown>
 
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-              Nos offres
+              {t('header.ourOffers')}
             </NavItem>
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               Insight
             </NavItem>
-             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-
+            <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               <ReactFlagsSelect
                 defaultCountry="FR"
-                countries={[ "GB", "FR", "ML", "CI","SN", "CN", "IN" ]}
-
-
+                countries={['GB', 'FR', 'ML', 'CI', 'SN', 'CN', 'IN']}
+                customLabels={{
+                  GB: 'EN-GB',
+                  FR: 'FR',
+                  ML: 'FR-ML',
+                  CI: 'FR',
+                  SN: 'FR',
+                  CN: 'FR',
+                  IN: 'EN-IN'
+                }}
+                showSelectedLabel={false}
               />
+              <button onClick={() => changeLanguage('en')}>en</button>
+              <button onClick={() => changeLanguage('fr')}>fr</button>
             </NavItem>
-
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    )
+    );
   }
 }
+export default withNamespaces('translation')(Header);
