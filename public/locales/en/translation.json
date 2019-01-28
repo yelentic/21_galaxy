@@ -22,5 +22,10 @@
     "interventionProposal" : "Intervention Proposal",
     "missionTracking" : "Mission Tracking",
     "delivery" : "Delivery"
+  },
+  "footer": {
+    "africa": "Africa",
+    "europa": "Europa",
+    "asia": "Asia"
   }
 }

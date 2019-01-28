@@ -33,11 +33,7 @@ class Home extends Component {
   }
 
   render() {
-    const { t, i18n } = this.props;
-
-    const changeLanguage = lng => {
-      i18n.changeLanguage(lng);
-    };
+    const { t } = this.props;
 
     var shown = {
       display: this.state.shown ? 'block' : 'none'
