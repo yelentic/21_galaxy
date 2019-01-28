@@ -74,7 +74,7 @@ class Home extends Component {
           &nbsp;{' '}
           <h1 style={{ color: 'white', textAlign: 'center' }}>
             {' '}
-            Un cabinet...fdfdvdfvdfvdfvdfv{' '}
+            {t('about2')}{' '}
           </h1>{' '}
         </div>
 
@@ -88,20 +88,24 @@ class Home extends Component {
           &nbsp;{' '}
           <h1 style={{ color: 'white', textAlign: 'center' }}>
             {' '}
-            Un cabinet...fdfdvdfvdfvdfvdfv{' '}
+            {t('about3')}{' '}
           </h1>{' '}
         </div>
 
         <div className={'nosoffres'}>
           <hr /> <br />
-          <h1> Notre fonctionnement </h1>
-          <Image src="assets/Process.jpg" circle className="profile-pic" />-{' '}
+          <h1> {t('ourOffers.title')} </h1>
+          <Image
+            src="assets/Process.jpg"
+            circle
+            className="profile-pic"
+          />-{' '}
           <AppBar position="static">
             <Tabs style={{ textAlign: 'center' }}>
-              <Tab value="one" label="Prise de contact" />
-              <Tab value="two" label="Proposition d'intervention" />
-              <Tab value="three" label="Suivi de la mission " />
-              <Tab value="Four" label="Livraison " />
+              <Tab value="one" label={t('ourOffers.contact')} />
+              <Tab value="two" label={t('ourOffers.interventionProposal')} />
+              <Tab value="three" label={t('ourOffers.missionTracking')} />
+              <Tab value="Four" label={t('ourOffers.delivery')} />
             </Tabs>
           </AppBar>
         </div>
