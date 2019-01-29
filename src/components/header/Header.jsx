@@ -4,9 +4,16 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import ReactFlagsSelect from 'react-flags-select';
 import 'react-flags-select/css/react-flags-select.css';
+import { withNamespaces } from 'react-i18next';
 
-export default class Header extends Component {
+class Header extends Component {
   render() {
+    const { t, i18n } = this.props;
+
+    const changeLanguage = lng => {
+      i18n.changeLanguage(lng);
+    };
+
     return (
       <Navbar default collapseOnSelect className="header-class">
         <Navbar.Header>
@@ -23,34 +30,35 @@ export default class Header extends Component {
               href="/about"
               to="/about"
             >
-              Découvrir 21Galaxy
+              {t('header.discover21Galaxy')}
             </NavItem>
 
             <NavDropdown
               eventKey={3}
-              title="Vous êtes"
+              title={t('header.position')}
               id="vous-etes-id"
               style={{}}
             >
               <MenuItem eventKey={3.1} style={{ textAlign: 'center' }}>
-                Entreprise
+                {t('header.company')}
               </MenuItem>
               <MenuItem eventKey={3.2} style={{ textAlign: 'center' }}>
-                Entrepreneur
+                {t('header.contractor')}
               </MenuItem>
               <MenuItem eventKey={3.3} style={{ textAlign: 'center' }}>
-                Particulier
+                {t('header.private')}
               </MenuItem>
             </NavDropdown>
 
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-              Nos offres
+              {t('header.ourOffers')}
             </NavItem>
 
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
-              Insight
+              {t('header.insight')}
             </NavItem>
-
+            <button onClick={() => changeLanguage('en')}>en</button>
+            <button onClick={() => changeLanguage('fr')}>fr</button>
             {/*
            <NavItem eventKey={1} componentClass={Link} href="" to="">
             <ReactFlagsSelect
@@ -65,3 +73,4 @@ export default class Header extends Component {
     );
   }
 }
+export default withNamespaces('translation')(Header);
