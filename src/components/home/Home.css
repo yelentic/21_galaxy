@@ -4,8 +4,7 @@
 .person-wrapper {
   margin-bottom: 0px;
 }
-
-.profile-pic {
+overlay .profile-pic {
   width: 50%;
 }
 
@@ -222,7 +221,7 @@ a:focus {
 
 .presentation {
   text-align: justify;
-  max-width: 650px;
+  max-width: 950px;
   padding: auto;
   margin: auto;
   max-height: 550px;
@@ -230,5 +229,5 @@ a:focus {
 }
 
 .text {
-  margin-top: 20px;
+  margin-top: 0px;
 }

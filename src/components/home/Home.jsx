@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Jumbotron, Grid, Image, Button } from 'react-bootstrap';
 import './Home.css';
+import Footer from '../footer/Footer';
 import OptionsGrid from '../options/optionGrid/OptionGrid.jsx';
 import Typography from '@material-ui/core/Typography';
 
@@ -171,6 +172,7 @@ export default class Home extends Component {
             </TabContent>
           </Tabs>
         </div>
+        <Footer />
       </div>
     );
   }

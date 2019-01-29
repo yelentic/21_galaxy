@@ -11,7 +11,7 @@
 
 .global {
   margin-top: -2em;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
 }
 
 .container {
@@ -29,7 +29,6 @@
 .col-md-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
   padding-left: 15px;
 }
 
@@ -60,9 +59,11 @@
 }
 .slogan {
   margin-top: -1em;
-  margin-left: 5em;
+  margin-left: 8em;
   float: left;
   font-style: italic;
+  font-size: 15px;
+  color: white;
 }
 
 h2 {
@@ -80,6 +81,43 @@ p {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #000;
-  background-color: #fff;
+  color: white;
+}
+#about {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 980px;
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 40px;
+}
+#about.h2,
+h3 {
+  color: white;
+}
+
+.MuiGridListTile-root-6 {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.separator-about {
+  position: relative;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(60deg, rgb(20, 26, 54), rgb(20, 26, 54)) repeat scroll 0% 0%;
+  padding: 15px;
+  transform: skewY(180deg);
+  margin-bottom: 10px;
+}
+.profile-about {
+  float: left;
+  max-width: 450px;
+}
+.location {
+  float: left;
+  width: 50%;
+  max-width: 150px;
+  padding-left: 25px;
+  margin-bottom: 100px;
 }
