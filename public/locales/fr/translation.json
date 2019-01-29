@@ -1,0 +1,27 @@
+{
+  "header": {
+    "discover21Galaxy": "Découvrir 21Galaxy",
+    "company": "Entreprise",
+    "contractor": "Entrepreneur",
+    "private": "Particulier",
+    "position": "Vous êtes",
+    "ourOffers": "Nos offres",
+    "insight": "Insight"
+  },
+  "devise": "Un cabinet en ligne qui vous accompagne dans toutes vos activités.",
+  "about": "FR => Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus lobortis massa ornare convallis. Sed volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo sollicitudin, mauris ipsum malesuada purus, id tincidunt velit  lectus nec purus. Nullam consequat vehicula odio cursus molestie.",
+  "about2": "Un cabinet...fdfdvdfvdfvdfvdfv",
+  "about3": "Un cabinet en mieux...fdfdvdfvdfvdfvdfv",
+  "ourOffers": {
+    "title" : "Notre fonctionnement",
+    "contact" : "Prise de contact",
+    "interventionProposal" : "Proposition d'intervention",
+    "missionTracking" : "Suivi de la mission",
+    "delivery" : "Livraison"
+  },
+  "footer": {
+    "africa": "Afrique",
+    "europa": "Europe",
+    "asia": "Asie"
+  }
+}

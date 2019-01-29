@@ -1,0 +1,27 @@
+{
+  "header": {
+    "discover21Galaxy": "Discover 21Galaxy",
+    "company": "Company",
+    "contractor": "Contractor",
+    "private": "Private",
+    "position": "You are",
+    "ourOffers": "Our Offers",
+    "insight": "Insight"
+  },
+  "devise": "\nAn online firm that accompanies you in all your activities.",
+  "about": " EN => Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus lobortis massa ornare convallis. Sed volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo sollicitudin, mauris ipsum malesuada purus, id tincidunt velit  lectus nec purus. Nullam consequat vehicula odio cursus molestie.",
+  "about2": "A cabinet...fdfdvdfvdfvdfvdfv",
+  "about3": "A better cabinet...fdfdvdfvdfvdfvdfv",
+  "ourOffers": {
+    "title" : "Our operation",
+    "contact" : "Contact",
+    "interventionProposal" : "Intervention Proposal",
+    "missionTracking" : "Mission Tracking",
+    "delivery" : "Delivery"
+  },
+  "footer": {
+    "africa": "Africa",
+    "europa": "Europa",
+    "asia": "Asia"
+  }
+}
