@@ -3,20 +3,20 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import About from './components/about/About';
-//import News from './components/News';
 import Navbar from './components/header/Header';
-import Footer from './components/footer/Footer';
-
+import Policy from './components/poles/Policy';
+import Mark_Com from './components/poles/Mark_Com';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Navbar/>
+          <Navbar />
           <Route exact path="/" component={Home} />
-          <Route exact path="/" component={Footer} />
           <Route path="/about" component={About} />
+          <Route path="/policy" component={Policy} />
+          <Route path="/mark_com" component={Mark_Com} />
         </div>
       </Router>
     );

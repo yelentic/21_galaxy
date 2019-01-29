@@ -1,0 +1,26 @@
+overlay .profile-pic {
+  width: 50%;
+}
+
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+h3 {
+  display: block;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+}
+
+p {
+  text-align: justify;
+  font-size: 20px;
+  max-width: 950px;
+}
+
+h3 {
+  margin-top: 2em;
+}

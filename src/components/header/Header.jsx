@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './Header.css'; 
+import './Header.css';
 import ReactFlagsSelect from 'react-flags-select';
 import 'react-flags-select/css/react-flags-select.css';
 
 export default class Header extends Component {
   render() {
     return (
-      <Navbar default collapseOnSelect>
+      <Navbar default collapseOnSelect className="header-class">
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">21 Galaxy</Link>
@@ -17,34 +17,51 @@ export default class Header extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
-            <NavItem eventKey={1} componentClass={Link} href="/" to="/">
+            <NavItem
+              eventKey={1}
+              componentClass={Link}
+              href="/about"
+              to="/about"
+            >
               Découvrir 21Galaxy
             </NavItem>
-              <NavDropdown eventKey={3} title="Vous êtes" id="vous-etes-id">
-                <MenuItem eventKey={3.1}>Entreprise</MenuItem>
-                <MenuItem eventKey={3.2}>Entrepreneur</MenuItem>
-                <MenuItem eventKey={3.3}>Particulier</MenuItem>
-              </NavDropdown>
+
+            <NavDropdown
+              eventKey={3}
+              title="Vous êtes"
+              id="vous-etes-id"
+              style={{}}
+            >
+              <MenuItem eventKey={3.1} style={{ textAlign: 'center' }}>
+                Entreprise
+              </MenuItem>
+              <MenuItem eventKey={3.2} style={{ textAlign: 'center' }}>
+                Entrepreneur
+              </MenuItem>
+              <MenuItem eventKey={3.3} style={{ textAlign: 'center' }}>
+                Particulier
+              </MenuItem>
+            </NavDropdown>
 
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               Nos offres
             </NavItem>
+
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               Insight
             </NavItem>
-             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
 
-              <ReactFlagsSelect
-                defaultCountry="FR"
-                countries={[ "GB", "FR", "ML", "CI","SN", "CN", "IN" ]}
-
-
-              />
-            </NavItem>
-
+            {/*
+           <NavItem eventKey={1} componentClass={Link} href="" to="">
+            <ReactFlagsSelect
+              defaultCountry="FR"
+              countries={[ "GB", "FR", "ML", "CI","SN", "CN", "IN" ]}
+            />
+          </NavItem>
+          */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    )
+    );
   }
 }
