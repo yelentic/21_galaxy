@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
+import {
+  Navbar,
+  Nav,
+  NavItem,
+  NavDropdown,
+  MenuItem,
+  Button
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import ReactFlagsSelect from 'react-flags-select';
 import 'react-flags-select/css/react-flags-select.css';
 import { withNamespaces } from 'react-i18next';
+import ReactCountryFlag from 'react-country-flag';
 
 class Header extends Component {
   render() {
@@ -57,8 +65,15 @@ class Header extends Component {
             <NavItem eventKey={1} componentClass={Link} href="/" to="/">
               {t('header.insight')}
             </NavItem>
-            <button onClick={() => changeLanguage('en')}>en</button>
-            <button onClick={() => changeLanguage('fr')}>fr</button>
+
+            <NavItem eventKey={1}>
+              <span onClick={() => changeLanguage('en')}>
+                <ReactCountryFlag code="gb" svg />
+              </span>
+              <span onClick={() => changeLanguage('fr')}>
+                <ReactCountryFlag code="fr" svg />
+              </span>
+            </NavItem>
             {/*
            <NavItem eventKey={1} componentClass={Link} href="" to="">
             <ReactFlagsSelect

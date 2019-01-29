@@ -17,6 +17,7 @@
     "prop-types": "latest",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.1",
+    "react-country-flag": "^1.0.1",
     "react-country-region-selector": "^1.4.3",
     "react-dom": "^16.7.0",
     "react-flags-select": "^1.1.10",
