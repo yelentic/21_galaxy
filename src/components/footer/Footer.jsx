@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 //import { Link } from 'react-router-dom';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import './Footer.css';
+import { withNamespaces } from 'react-i18next';
 
-export default class Footer extends Component {
+class Footer extends Component {
   render() {
+    const { t } = this.props;
     return (
       <div className="section-blue">
         <div>
@@ -16,10 +18,10 @@ export default class Footer extends Component {
                   <div className="col-xs-12 col-sm-4 col-md-4">
                     <h4>21 | Galaxy</h4>
                     <ul className="list-unstyled quick-links">
-                      <li>Africa</li>
-                      <li>Europe</li>
-                      <li>Asia</li>
-                      <li>Get Started</li>
+                      <li>{t('footer.africa')}</li>
+                      <li>{t('footer.europa')}</li>
+                      <li>{t('footer.asia')}</li>
+                      <li>{t('footer.getStarted')}</li>
                     </ul>
                   </div>
 
@@ -40,7 +42,7 @@ export default class Footer extends Component {
                         <h4>
                           {' '}
                           <button className="Demande">
-                            Demandez un devis en ligne{' '}
+                            {t('footer.onlineQuote')}{' '}
                           </button>
                         </h4>
                       </li>
@@ -49,7 +51,7 @@ export default class Footer extends Component {
                   </div>
 
                   <div className="col-xs-12 col-sm-4 col-md-4">
-                    <h4> Actualités </h4>
+                    <h4> {t('footer.news')} </h4>
                     <ul className="list-unstyled quick-links">
                       <li>Insigh</li>
                       <li>Facebook</li>
@@ -57,10 +59,10 @@ export default class Footer extends Component {
                     </ul>
                   </div>
                   <div className="col-xs-12 col-sm-4 col-md-4">
-                    <h4> Légal </h4>
+                    <h4> {t('footer.legal')} </h4>
                     <ul className="list-unstyled quick-links">
-                      <li>Mentions légales </li>
-                      <li>Protection de la vie privée et cookies </li>
+                      <li>{t('footer.legalNotice')} </li>
+                      <li>{t('footer.privacy')} </li>
                     </ul>
                   </div>
                 </div>
@@ -72,3 +74,4 @@ export default class Footer extends Component {
     );
   }
 }
+export default withNamespaces('translation')(Footer);
