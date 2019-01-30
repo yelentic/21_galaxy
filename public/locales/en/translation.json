@@ -8,20 +8,22 @@
     "ourOffers": "Our Offers",
     "insight": "Insight"
   },
-  "devise": "\nAn online firm that accompanies you in all your activities.",
-  "about": " EN => Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus lobortis massa ornare convallis. Sed volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo sollicitudin, mauris ipsum malesuada purus, id tincidunt velit  lectus nec purus. Nullam consequat vehicula odio cursus molestie.",
-  "about2": "A cabinet...fdfdvdfvdfvdfvdfv",
-  "about3": "A better cabinet...fdfdvdfvdfvdfvdfv",
+  "devise": "Network of international experts, anchored in France and located on 3 continents including 27 countries.",
+  "about": "21 Galaxy accompanies you throughout the life cycle of your company, from its creation to its evolution. The objective is to to sustain your business and optimize your growth and Business opportunities.",
+  "about2": "21 Galaxy the partner of your success",
+  "about3": "\nWe accompany you in all your projects from beginning to end",
   "ourOffers": {
     "title" : "Our operation",
     "contact" : "Contact",
     "interventionProposal" : "Intervention Proposal",
     "missionTracking" : "Mission Tracking",
-    "delivery" : "Delivery"
+    "contactDropdown" : "We have known for a long time that working with readable text meaning is distracting, and prevents focus on the layout itself. The advantage of Lorem Ipsum on a generic text like 'Text. Of text. Of text.' is that he has a distribution of letters more or less normal, and in any case comparable with that of French standard. Many software suites for implementation page or website publishers have made Lorem Ipsum their fake text by default, and a search for 'Lorem Ipsum' will lead you to many sites that are still in their construction phase. Several versions appeared with time, sometimes by accident, often intentionally (history of adding small clapboard eye, even embarrassing sentences).",
+    "interventionProposalDropdown" : "We have known for a long time that working with readable text meaning is distracting, and prevents focus on the layout itself. The advantage of Lorem Ipsum on a generic text like 'Text. Of text. Of text.' is that he has a distribution of letters more or less normal, and in any case comparable with that of French standard. Many software suites for implementation page or website publishers have made Lorem Ipsum their fake text by default, and a search for 'Lorem Ipsum' will lead you to many sites that are still in their construction phase. Several versions appeared with time, sometimes by accident, often intentionally (history of adding small clapboard eye, even embarrassing sentences).",
+    "missionTrackingDropdown" : "We have known for a long time that working with readable text meaning is distracting, and prevents focus on the layout itself. The advantage of Lorem Ipsum on a generic text like 'Text. Of text. Of text.' is that he has a distribution of letters more or less normal, and in any case comparable with that of French standard. Many software suites for implementation page or website publishers have made Lorem Ipsum their fake text by default, and a search for 'Lorem Ipsum' will lead you to many sites that are still in their construction phase. Several versions appeared with time, sometimes by accident, often intentionally (history of adding small clapboard eye, even embarrassing sentences)."
   },
   "footer": {
     "africa": "Africa",
-    "europa": "Europa",
+    "europa": "Europe",
     "asia": "Asia"
   }
 }

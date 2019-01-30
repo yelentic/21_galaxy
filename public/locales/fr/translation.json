@@ -8,16 +8,18 @@
     "ourOffers": "Nos offres",
     "insight": "Insight"
   },
-  "devise": "Un cabinet en ligne qui vous accompagne dans toutes vos activités.",
-  "about": "FR => Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis tellus lobortis massa ornare convallis. Sed volutpat eu odio eu egestas. Cras vestibulum, ipsum non commodo sollicitudin, mauris ipsum malesuada purus, id tincidunt velit  lectus nec purus. Nullam consequat vehicula odio cursus molestie.",
-  "about2": "Un cabinet...fdfdvdfvdfvdfvdfv",
-  "about3": "Un cabinet en mieux...fdfdvdfvdfvdfvdfv",
+  "devise": "Réseau d’experts internationaux, ancré en France et implantés sur 3 continents dont 27 pays.",
+  "about": "21 Galaxy vous accompagne sur tout le cycle de vie de votre entreprise, de sa création jusqu’à son évolution. L’objectif est de pérenniser votre activité et d’optimiser votre croissance et vos opportunités d’affaires.",
+  "about2": "21 Galaxy le partenaire de votre succès",
+  "about3": "Nous vous accompagnons dans tous vos projets de A à Z",
   "ourOffers": {
     "title" : "Notre fonctionnement",
     "contact" : "Prise de contact",
     "interventionProposal" : "Proposition d'intervention",
     "missionTracking" : "Suivi de la mission",
-    "delivery" : "Livraison"
+    "contactDropdown" : "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).",
+    "interventionProposalDropdown" : "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).",
+    "missionTrackingDropdown" : "On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes)."
   },
   "footer": {
     "africa": "Afrique",
