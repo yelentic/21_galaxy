@@ -43,5 +43,18 @@
     "legal": "Legal",
     "legalNotice": "Legal Notice",
     "privacy": "Privacy and cookies"
+  }, 
+  "policy" : {
+    "title" : "Public policy", 
+    "summary" : "21 Galaxy supports you in the development, analysis, evaluation and implementation of public policies.", 
+    "para1" : "Execution of missions of public policies and programs", 
+    "para2" : "Execution of missions of public policies and programs",
+    "para3" : "Markets - public order - tenders", 
+    "para4" : "Funding, State aid, subsidies",
+    "para5" : "Territorial development",
+    "para6" : "Economy, Education, Environment, Sport, Health",
+    "para7" : "Diplomacy and International Relations Council",
+    "para8" : "Business Diplomacy, Geopolitics, Geoeconomics",
+    "para9" : "OBOR - CPCE - African Union, ASEAN; Emerging and High Potential Countries - New Industrialized Country"
   }
 }

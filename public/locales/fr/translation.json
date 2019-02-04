@@ -43,5 +43,19 @@
     "legal": "Légal",
     "legalNotice": "Mentions légales",
     "privacy": "Protection de la vie privée et cookies"
+  }, 
+
+  "policy" : {
+    "title" : "AFFAIRES PUBLIQUES", 
+    "summary" : " 21 Galaxy vous accompagne dans l’élaboration, l’analyse, l’évaluation et la mise en œuvre des politiques publiques.", 
+    "para1" : "Exécution des missions des politiques et programmes publiques", 
+    "para2" : "Relations avec les acteurs institutionnels",
+    "para3" : "Marchés -- commande publique -- appels d’offre", 
+    "para4" : "Financements, Aide d’Etat, subventions",
+    "para5" : "Développement territorial",
+    "para6" : "Economie, Education, Environnement, Sport, Santé",
+    "para7" : "Conseil en Diplomatie et Relations internationales",
+    "para8" : "Diplomatie des affaires, Géopolitique, Géoéconomie",
+    "para9" : "OBOR -- CPCE -- Union Africaine, ASEAN; Pays émergents et à fort potentiels -- Nouveau pays Industrialisé"
   }
 }

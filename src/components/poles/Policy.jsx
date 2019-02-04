@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import './Policy.css';
 import { Image } from 'react-bootstrap';
 import Footer from '../footer/Footer';
+import { withNamespaces } from 'react-i18next';
 
-export default class Policy extends Component {
+class Policy extends Component {
   render() {
+    const { t } = this.props;
+
     return (
       <div>
         <div className="overlay image">
@@ -15,30 +18,23 @@ export default class Policy extends Component {
           />
         </div>
         <div>
-          <h2>AFFAIRES PUBLIQUES</h2>
+          <h2> {t('policy.title')}</h2>
         </div>
         <div>
           <p>
-            21 Galaxy vous accompagne dans l’élaboration, l’analyse,
-            l’évaluation et la mise en œuvre des politiques publiques.
+            {t('policy.title')}
             <br />
             <br />
             <ul>
-              <li>
-                Exécution des missions des politiques et programmes publiques{' '}
-              </li>
-              <li>Relations avec les acteurs institutionnels</li>
-              <li>Marchés -- commande publique -- appels d’offre </li>
-              <li>Financements, Aide d’Etat, subventions</li>
-              <li>Financements, Aide d’Etat, subventions</li>
-              <li>Développement territorial</li>
-              <li>Economie, Education, Environnement, Sport, Santé </li>
-              <li>Conseil en Diplomatie et Relations internationales</li>
-              <li>Diplomatie des affaires, Géopolitique, Géoéconomie </li>
-              <li>
-                OBOR -- CPCE -- Union Africaine, ASEAN; Pays émergents et à fort
-                potentiels -- Nouveau pays Industrialisé{' '}
-              </li>
+              <li>{t('policy.para1')}</li>
+              <li>{t('policy.para2')}</li>
+              <li>{t('policy.para3')}</li>
+              <li>{t('policy.para4')}</li>
+              <li>{t('policy.para5')}</li>
+              <li>{t('policy.para6')}</li>
+              <li>{t('policy.para7')}</li>
+              <li>{t('policy.para8')}</li>
+              <li>{t('policy.para9')}</li>
             </ul>
           </p>
         </div>
@@ -47,3 +43,5 @@ export default class Policy extends Component {
     );
   }
 }
+
+export default withNamespaces('translation')(Policy);
