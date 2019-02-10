@@ -36,13 +36,13 @@ class OptionGrid extends Component {
 
         {this.state.courses ? (
           <div>
-            <Grid container style={{ padding: 20 }}>
+            <Grid container className="root">
               {this.state.courses
                 .filter(s =>
-                  s.fields.title.toLowerCase().includes(this.state.searchString)
+                  s.title.toLowerCase().includes(this.state.searchString)
                 )
                 .map(currentCourse => (
-                  <Grid item xs={4} style={{ padding: 20 }}>
+                  <Grid item xs={6} className="gridList">
                     <OptionCard course={currentCourse} />
                   </Grid>
                 ))}
@@ -58,52 +58,64 @@ class OptionGrid extends Component {
 
 const MENUOPTIONS = [
   {
-    fields: {
-      title: 'Créer/Gerer Ma societé',
-      image: 'assets/test/1.jpg'
-    }
+    title: 'Créer/Gerer Ma societé',
+    image: 'assets/test/1.jpg',
+    link: '#'
   },
   {
-    fields: {
-      title: 'Marketing et Communication',
-      image: 'assets/test/2.jpg'
-    }
+    title: 'Marketing et Communication',
+    image: 'assets/test/2.jpg',
+    link: '/mark_com'
   },
   {
-    fields: {
-      title: 'Investir',
-      image: 'assets/test/3.jpg'
-    }
+    title: 'Investir',
+    image: 'assets/test/3.jpg',
+    link: '#'
   },
   {
-    fields: {
-      title: 'Audit / Finances',
-      image: 'assets/test/4.jpg'
-    }
+    title: 'Audit',
+    image: 'assets/test2/audit.jpg',
+    link: '#'
   },
   {
-    fields: {
-      title: 'Affaires Publics',
-      image: 'assets/test/5.jpg'
-    }
+    title: 'RH et Formation',
+    image: 'assets/test/6.jpg',
+    link: '#'
   },
   {
-    fields: {
-      title: 'RH et Formation',
-      image: 'assets/test/6.jpg'
-    }
+    title: 'Social',
+    image: 'assets/test/7.jpg',
+    link: '#'
   },
   {
-    fields: {
-      title: 'Social',
-      image: 'assets/test/7.jpg'
-    }
+    title: 'Santé',
+    image: 'assets/test2/Health.jpg',
+    link: '#'
   },
   {
-    fields: {
-      title: 'Santé',
-      image: 'assets/test/8.jpg'
-    }
+    title: 'Juridique',
+    image: 'assets/test2/notaire.jpg',
+    link: '#'
+  },
+  {
+    title: 'Corporate',
+    image: 'assets/test2/corporate.jpg',
+    link: '#'
+  },
+  {
+    title: 'Finance',
+    image: 'assets/test2/finance.jpg',
+    link: '#'
+  },
+  {
+    title: 'Digital',
+    image: 'assets/test2/digital.jpg',
+    link: '#'
+  },
+  {
+    title: 'Affaires Publiques',
+    image: 'assets/test2/public.png',
+    link: '/policy'
   }
 ];
 

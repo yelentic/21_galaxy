@@ -1,37 +1,27 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import { Media } from 'react-md';
+import MediaOverlay from 'react-md/lib/Media/MediaOverlay';
+import CardTitle from 'react-md/lib/Cards/CardTitle';
+import GridListTile from '../../titlebars/grid';
 
 const OptionCard = props => {
   return (
     <div>
       {props.course ? (
         <Card>
-          <Media>
-            <img
-              src={props.course.fields.image}
-              alt={props.course.fields.title}
-              height="200"
-              width="500"
-            />
-          </Media>
-          <CardContent>
-            <Typography gutterBottom variant="subtitle1" component="h3">
-              {props.course.fields.title}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size="small" color="primary" href={''} target="_blank">
-              En France
-            </Button>
-            <Button size="small" color="primary" href={''} target="_blank">
-              À l'international
-            </Button>
-          </CardActions>
+          <img
+            src={props.course.image}
+            alt={props.course.title}
+            height="200"
+            width="100%"
+          />
+          <MediaOverlay>
+            <a href={props.course.link}>
+              <CardTitle title={props.course.title} />
+            </a>
+          </MediaOverlay>
         </Card>
       ) : null}
     </div>

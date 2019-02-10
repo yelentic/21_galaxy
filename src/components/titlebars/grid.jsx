@@ -36,42 +36,49 @@ const tileData = [
     img: 'assets/test2/audit.jpg',
     title: 'Audit',
     author: 'audit',
+    link: '/audit',
     featured: true
   },
   {
     img: 'assets/test2/finance.jpg',
     title: 'Finance',
     author: 'finance',
+    link: '/finance',
     featured: true
   },
   {
     img: 'assets/test2/digital.jpg',
     title: 'Digital',
     author: 'digital',
+    link: '/digital',
     featured: true
   },
   {
     img: 'assets/test2/notaire.jpg',
     title: 'Juridique',
     author: 'Juridique',
+    link: '/Juridique',
     featured: true
   },
   {
     img: 'assets/test2/public.png',
     title: 'Affaires Publiques',
     author: 'Affaires Publiques',
+    link: '/policy',
     featured: true
   },
   {
     img: 'assets/test2/corporate.jpg',
     title: 'Corporate',
     author: 'Corporate',
+    link: '/Corporate',
     featured: true
   },
   {
     img: 'assets/test2/Health.jpg',
     title: 'Santé',
     author: 'Santé',
+    link: '/health',
     featured: true
   }
 ];
@@ -85,18 +92,20 @@ function SingleLineGridList(props) {
         {tileData.map(tile => (
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              classes={{
-                root: classes.titleBar,
-                title: classes.title
-              }}
-              actionIcon={
-                <IconButton>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
-            />
+            <a href={tile.link}>
+              <GridListTileBar
+                title={tile.title}
+                classes={{
+                  root: classes.titleBar,
+                  title: classes.title
+                }}
+                actionIcon={
+                  <IconButton>
+                    <StarBorderIcon className={classes.title} />
+                  </IconButton>
+                }
+              />
+            </a>
           </GridListTile>
         ))}
       </GridList>
@@ -105,7 +114,8 @@ function SingleLineGridList(props) {
 }
 
 SingleLineGridList.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  router: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(SingleLineGridList);
